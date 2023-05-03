@@ -1,10 +1,12 @@
+// https://thebookofshaders.com/07/
+
 #define PI 3.14159265359
 #define TWO_PI 6.28318530718
 
 float createNgon(vec2 _uv, vec2 _pos, int _vertices)
 {
     // Set position
-    _uv += _pos * - 1.0;
+    _uv += _pos * -1.0;
     
 	  float angle = atan(_uv.x, _uv.y) + PI;
   	float radius = TWO_PI / float(_vertices);

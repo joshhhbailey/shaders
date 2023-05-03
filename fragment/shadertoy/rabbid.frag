@@ -1,4 +1,3 @@
-// References:
 // https://www.shadertoy.com/view/lsXcWn
 // https://youtu.be/ZlNnrpM0TRg
 // Rayman Raving Rabbid

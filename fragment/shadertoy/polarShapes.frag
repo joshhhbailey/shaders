@@ -1,3 +1,5 @@
+// https://thebookofshaders.com/07/
+
 void mainImage(out vec4 fragColor, in vec2 fragCoord)
 {
     // Setup canvas
