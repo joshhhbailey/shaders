@@ -33,7 +33,7 @@ float horizontalWave(vec2 _uv, float _wavelength, float _amplitude)
 
 float remap(vec2 _rangeA, vec2 _rangeB, float _value)
 {
-    return ((_value - _rangeA.x) / (_rangeA.y - _rangeA.x)) * (_rangeB.y - _rangeB.x) + _rangeB.x;
+    return clamp(((_value - _rangeA.x) / (_rangeA.y - _rangeA.x)), 0.0, 1.0) * (_rangeB.y - _rangeB.x) + _rangeB.x;
 }
 
 void mainImage(out vec4 fragColor, in vec2 fragCoord)

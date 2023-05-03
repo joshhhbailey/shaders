@@ -1,7 +1,7 @@
 float createCircle(vec2 _uv, vec2 _pos, float _radius, float _blur)
 {
-    float distance = length(_uv - _pos);
-    return smoothstep(_radius, _radius - _blur, distance);
+    float dist = length(_uv - _pos);
+    return smoothstep(_radius, _radius - _blur, dist);
 }
 
 void mainImage(out vec4 fragColor, in vec2 fragCoord)
